@@ -1,0 +1,541 @@
+<!DOCTYPE html><html lang="es" class="scroll-smooth" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "on-primary-fixed": "#002204",
+                            "on-tertiary": "#ffffff",
+                            "surface-container-high": "#eaead1",
+                            "surface-dim": "#dbdcc3",
+                            "tertiary": "#69512d",
+                            "on-surface": "#1b1d0e",
+                            "surface": "#fbfbe2",
+                            "on-secondary-container": "#19722b",
+                            "inverse-primary": "#88d982",
+                            "on-primary": "#ffffff",
+                            "tertiary-fixed-dim": "#e2c195",
+                            "tertiary-fixed": "#ffddb0",
+                            "surface-container-highest": "#e4e4cc",
+                            "inverse-on-surface": "#f2f2d9",
+                            "secondary-fixed": "#9ff79f",
+                            "on-error": "#ffffff",
+                            "primary-fixed-dim": "#88d982",
+                            "tertiary-container": "#836943",
+                            "on-tertiary-fixed-variant": "#594320",
+                            "surface-container-low": "#f5f5dc",
+                            "secondary-fixed-dim": "#83da85",
+                            "outline-variant": "#bfcaba",
+                            "on-secondary-fixed-variant": "#005318",
+                            "primary-container": "#2e7d32",
+                            "secondary": "#126d27",
+                            "on-primary-container": "#cbffc2",
+                            "error": "#ba1a1a",
+                            "surface-container-lowest": "#ffffff",
+                            "on-surface-variant": "#40493d",
+                            "surface-variant": "#e4e4cc",
+                            "on-tertiary-fixed": "#281800",
+                            "on-secondary": "#ffffff",
+                            "primary": "#0d631b",
+                            "surface-bright": "#fbfbe2",
+                            "inverse-surface": "#303221",
+                            "on-error-container": "#93000a",
+                            "background": "#fbfbe2",
+                            "error-container": "#ffdad6",
+                            "on-primary-fixed-variant": "#005312",
+                            "outline": "#707a6c",
+                            "surface-tint": "#1b6d24",
+                            "secondary-container": "#9cf49c",
+                            "surface-container": "#efefd7",
+                            "on-background": "#1b1d0e",
+                            "on-secondary-fixed": "#002105",
+                            "on-tertiary-container": "#ffeedc",
+                            "primary-fixed": "#a3f69c"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "2xl": "1.5rem",
+                            "3xl": "2.5rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "margin-desktop": "80px",
+                            "gutter": "32px",
+                            "container-max": "1440px",
+                            "unit": "8px",
+                            "section-gap": "120px"
+                        },
+                        "fontFamily": {
+                            "label-lg": ["Inter"],
+                            "headline-lg": ["Montserrat"],
+                            "display-md": ["Montserrat"],
+                            "headline-md": ["Montserrat"],
+                            "body-lg": ["Inter"],
+                            "display-lg": ["Montserrat"],
+                            "body-md": ["Inter"],
+                            "label-sm": ["Inter"]
+                        },
+                        "fontSize": {
+                            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                            "display-md": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    }catch(_e){}</script></head><body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl transition-all duration-300 h-20 shadow-[0_4px_30px_rgba(46,125,50,0.05)]">
+        <div class="max-w-[1440px] mx-auto px-margin-desktop h-full flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_IHh07OChzDRHT1ul1i1frU9fhcoRUMVaiwQQMykFo0M6Vhetm6aDXwkvG7EXudwDay9X1dYfFYOotzQqy7DCIlihoHlrJsuB9BvE0ACoi_kVFXUFZTpQKZmklVRmBDRBvfRKFC1TOG4QK88OJJiY2L3SS8erZsG1n_bePuQVKGtNdT0ap-aOlHXwjRGB-0geO9I6H4Ur0vt45CjVEeW0Nye5q7z2PBURFKHdMQGT9XNxFiOE1De1m5L_Q0Fax9C7uw" alt="EcoBite Logo" class="h-14 w-auto object-contain">
+                <span class="font-display-md text-headline-md font-bold text-primary"><span class="text-primary">Eco</span><span style="color: rgb(89, 67, 32);" class="">Bite</span> S.R.L.</span>
+            </div>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="#inicio" class="font-label-lg text-label-lg text-primary border-b-2 border-primary pb-1">Inicio</a>
+                <a href="#nosotros" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors">Nosotros</a>
+                <a href="#productos" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors">Productos</a>
+                <a href="#beneficios" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors">Beneficios</a>
+                <a href="#faq" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors">Preguntas</a>
+            </div>
+            <a href="#contacto" class="hidden md:block bg-primary text-on-primary px-8 py-3 rounded-full font-label-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">Pedir Presupuesto</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="relative h-[100vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/30 z-10"></div>
+            <img src="https://lh3.googleusercontent.com/aida/AP1WRLuMJ-hhB8KWvebOsu55r06SyILu7kb1L756S4tmP3Hf7skd13Hj8PS_SOVzIhkYhLJ9-W3aeeyQ_2L8SuLFlyqIG8Bi3BTgsN56wTnApU-UdQbjHHk64kusc4R-d81oXIhhUEfZdeWGtvi59rOxct76vkmUbVJwAGBkw7efG453RV7JD35G5iA2wQXs02_zM2lUF6FWtrFK9g0Zuzt7TI2tM8KnTeYc_ANer5D3RFQlKA161CjE5kPEhpc" alt="Experiencia EcoBite" class="w-full h-full object-cover scale-105" id="hero-img">
+        </div>
+        
+        <div class="relative z-20 max-w-[1440px] px-margin-desktop text-center text-white">
+            <h1 class="font-display-lg text-display-lg mb-6 leading-tight max-w-4xl mx-auto">
+                Disfrutá tu bebida. <br> <span class="text-secondary-fixed">Cuidá el planeta.</span>
+            </h1>
+            <p class="font-body-lg text-body-lg mb-10 max-w-2xl mx-auto opacity-90">
+                Transformamos la forma de consumir bebidas con vasos comestibles y biodegradables diseñados para un futuro más sostenible.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#productos" class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/20">Conocer productos</a>
+                <a href="#nosotros" class="glass-panel text-white border-white/40 px-10 py-4 rounded-full font-label-lg hover:bg-white/20 transition-all">Nuestra historia</a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer z-20">
+            <span class="material-symbols-outlined text-4xl text-white">keyboard_arrow_down</span>
+        </div>
+    </header>
+
+    <section id="nosotros" class="py-section-gap relative">
+        <div class="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="reveal active">
+                <span class="text-tertiary font-label-lg uppercase tracking-widest block mb-4">Nuestra Filosofía</span>
+                <h2 class="font-display-md text-display-md text-primary mb-8">Innovación que se saborea</h2>
+                <div class="space-y-6 font-body-lg text-on-surface-variant leading-relaxed">
+                    <p class="">EcoBite S.R.L. nació en el corazón de Asunción bajo una premisa urgente: combatir la crisis de plásticos de un solo uso que ahoga nuestros ecosistemas. Nos dimos cuenta de que la sostenibilidad no debe ser un sacrificio, sino una mejora en la experiencia del cliente.</p>
+                    <p class="">Nuestra <strong>misión</strong> es liderar la transición hacia una economía circular mediante el desarrollo de biomateriales comestibles que eliminen el residuo desde su concepción. Creemos en la <strong>visión</strong> de un mundo donde cada café o cóctel contribuya a la regeneración del planeta.</p>
+                    <p class="">Nos guían valores innegociables: <strong class="">Responsabilidad Ambiental</strong> en cada proceso, <strong>Calidad Premium</strong> en cada bocado y un <strong>Compromiso</strong> total con la innovación local para impacto global.</p>
+                </div>
+                <div class="mt-12 flex gap-8">
+                    <div class="border-l-4 border-secondary pl-6">
+                        <p class="font-display-md text-headline-lg text-primary">100%</p>
+                        <p class="font-label-sm text-on-surface-variant uppercase">Biodegradable</p>
+                    </div>
+                    <div class="border-l-4 border-tertiary pl-6">
+                        <p class="font-display-md text-headline-lg text-tertiary">0%</p>
+                        <p class="font-label-sm text-on-surface-variant uppercase">Residuos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative reveal active">
+                <div class="absolute -inset-4 bg-primary/10 rounded-3xl -z-10 blur-2xl"></div>
+                <img src="https://lh3.googleusercontent.com/aida/AP1WRLt0omjWl8dU91OLalm-L1yS2URVquKj0yp-XQpTquhg_fdTQ49Gaf_blLE4wzXDIP1oPJA5WG7hsB4f0e3U1XGmXANts4K4Sj-BvzAMHp4XDOFcNm9OCNKdHiYggWnmZgyL9fqtx6dQh6qMNiq5XgW75SCekbBaCzzklUMxD_RttlfgvKO1PlYsQHxee3IXG4PfF30RuquylP_hFSKv4SrKr0AI4WPrasRxbN6oyksPzwCoj3abpv394Q" alt="Planta de Producción EcoBite" class="w-full h-auto rounded-3xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="py-section-gap bg-surface-container-low">
+        <div class="max-w-[1440px] mx-auto px-margin-desktop">
+            <div class="text-center mb-20 reveal active">
+                <h2 class="font-display-md text-display-md text-primary mb-4">Colección EcoBite</h2>
+                <p class="max-w-2xl mx-auto text-on-surface-variant text-body-lg">Ingeniería comestible basada en granos naturales, diseñada para maridajes perfectos que resisten hasta las bebidas más calientes.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="group reveal relative glass-panel p-8 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 active">
+                    <div class="h-80 overflow-hidden rounded-2xl mb-8">
+                        <img src="https://lh3.googleusercontent.com/aida/AP1WRLsNeyErax5SXGDghSx456BEFOIDrg8Fj_dKnFtjozjb26FlqXbPK2XgtDUhVzCuzlA7Agg7d42JKW1SPJx_cmxCF6MiWvdB8wYlr0-ABVIM1o_LO4i1sF90ILcHI6ecvcTgNPqDTrbYy2Ax4D8K_iHrtvzN18388fVX7AMQ7I96W4_FD0YgyuEdBSesQ-5ozuMJMU9fmSPfQTbE00uH4Q-aFDwywUfK1mL5Rlu6rmpzUAdRNsYpCN55Tw" alt="EcoBite Original Grain" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-headline-lg text-headline-lg text-primary">Original Grain</h3>
+                        <span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-label-sm font-semibold">Más Vendido</span>
+                    </div>
+                    <p class="text-on-surface-variant mb-6 text-body-lg leading-relaxed">Nuestra base clásica fabricada con salvado de trigo y avena orgánica. Ofrece un sabor neutro con notas sutiles a galleta artesanal, ideal para cafés de especialidad.</p>
+                    <ul class="grid grid-cols-2 gap-4 text-label-lg text-on-surface">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Calor: Hasta 85°C</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Duración: 45 min</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Grano Orgánico</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Personalizable</li>
+                    </ul>
+                </div>
+
+                <div class="group reveal relative glass-panel p-8 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 active">
+                    <div class="h-80 overflow-hidden rounded-2xl mb-8">
+                        <img src="https://lh3.googleusercontent.com/aida/AP1WRLvUdkEO1EUAv3Ms_ujZZNTwrrQkW6ThiCG1Ty5d8vOu59_XV3NedInv6TdAEci7PvzOi3h7VnnEGYSVBlKen73fnmcLecKIL9hPDMUjm4Qcst_dmMbnUxHrgJ1zeIKGk-5Mezxa9zjwl-T6WIuZE7U_UKFrejBKGR71esATtoItkMBjWF-jZ2_6N9VcExDClcJWiiVaqO549gJbBSGbgHqlyNDEpwJHhpAS9Db3p4Nz-PO08f2ie31lWQ" alt="Variedad EcoFlavor" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-headline-lg text-headline-lg text-primary">EcoFlavor Series</h3>
+                        <span class="bg-tertiary/10 text-tertiary px-4 py-1 rounded-full text-label-sm font-semibold">Gourmet</span>
+                    </div>
+                    <p class="text-on-surface-variant mb-6 text-body-lg leading-relaxed">Elevá la experiencia con matices de chocolate o vainilla. Diseñados para postres y coctelería premium.</p>
+                    <ul class="grid grid-cols-2 gap-4 text-label-lg text-on-surface">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Chocolate/Vainilla</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Sin Gluten Opt.</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Doble Grosor</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Maridaje Sugerido</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proceso" class="py-section-gap overflow-hidden">
+        <div class="max-w-[1440px] mx-auto px-margin-desktop">
+            <h2 class="font-display-md text-display-md text-primary text-center mb-20 reveal active">El Ciclo de Vida EcoBite</h2>
+            
+            <div class="relative flex flex-col md:flex-row justify-between gap-12">
+                <div class="absolute top-1/2 left-0 w-full h-1 bg-primary/10 -translate-y-1/2 hidden md:block"></div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center group reveal active">
+                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white text-xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-xl">1</div>
+                    <h4 class="font-headline-md mb-2">Fabricamos</h4>
+                    <p class="text-on-surface-variant text-sm max-w-[180px]">Producción con energía limpia y granos locales.</p>
+                </div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center group reveal active" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white text-xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-xl">2</div>
+                    <h4 class="font-headline-md mb-2">Distribuimos</h4>
+                    <p class="text-on-surface-variant text-sm max-w-[180px]">Logística eficiente con empaque compostable.</p>
+                </div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center group reveal active" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white text-xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-xl">3</div>
+                    <h4 class="font-headline-md mb-2">Disfrutás</h4>
+                    <p class="text-on-surface-variant text-sm max-w-[180px]">Tu bebida favorita en un recipiente único.</p>
+                </div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center group reveal active" style="transition-delay: 300ms;">
+                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white text-xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-xl">4</div>
+                    <h4 class="font-headline-md mb-2">Consumís</h4>
+                    <p class="text-on-surface-variant text-sm max-w-[180px]">Comés el vaso o lo desechás sin culpa.</p>
+                </div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center group reveal active" style="transition-delay: 400ms;">
+                    <div class="w-16 h-16 rounded-full bg-secondary flex items-center justify-center text-white text-xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-xl">5</div>
+                    <h4 class="font-headline-md mb-2">Cero Residuos</h4>
+                    <p class="text-on-surface-variant text-sm max-w-[180px]">El vaso desaparece en días, no siglos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-section-gap bg-primary text-on-primary">
+        <div class="max-w-[1440px] mx-auto px-margin-desktop">
+            <div class="text-center mb-16 reveal active">
+                <h2 class="font-display-md text-display-md mb-4">¿Por qué elegir EcoBite?</h2>
+                <p class="max-w-2xl mx-auto opacity-80">Ventajas corporativas y ambientales que impulsan tu marca hacia el futuro.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl reveal border border-white/10 active">
+                    <span class="material-symbols-outlined text-4xl mb-6">eco</span>
+                    <h3 class="font-headline-md mb-3">100% Biodegradable</h3>
+                    <p class="text-sm opacity-80">Si no se consume, se degrada en compost en menos de 30 días, nutriendo el suelo.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl reveal border border-white/10 active" style="transition-delay: 100ms;">
+                    <span class="material-symbols-outlined text-4xl mb-6">verified_user</span>
+                    <h3 class="font-headline-md mb-3">Seguridad Alimentaria</h3>
+                    <p class="text-sm opacity-80">Certificación ISO y Grado Alimenticio. Sin químicos, colorantes ni plásticos.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl reveal border border-white/10 active" style="transition-delay: 200ms;">
+                    <span class="material-symbols-outlined text-4xl mb-6">recycling</span>
+                    <h3 class="font-headline-md mb-3">Reducción de Costos</h3>
+                    <p class="text-sm opacity-80">Eliminación de tasas por gestión de residuos y reducción de huella de carbono.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl reveal border border-white/10 active" style="transition-delay: 300ms;">
+                    <span class="material-symbols-outlined text-4xl mb-6">auto_awesome</span>
+                    <h3 class="font-headline-md mb-3">Innovación de Marca</h3>
+                    <p class="text-sm opacity-80">Diferenciación inmediata que genera conversación orgánica en redes sociales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-section-gap">
+        <div class="max-w-[1440px] mx-auto px-margin-desktop">
+            <h2 class="font-display-md text-display-md text-primary text-center mb-16 reveal active">Lo que dicen nuestros aliados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-panel p-8 rounded-3xl reveal active">
+                    <div class="flex text-tertiary mb-4"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+                    <p class="italic mb-6">"Implementamos EcoBite en nuestra cafetería y la respuesta fue increíble. La gente ama la galleta después del café."</p>
+                    <div><p class="font-bold">Sofía Méndez</p><p class="text-xs text-on-surface-variant">Dueña, Café del Sol</p></div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="glass-panel p-8 rounded-3xl reveal active" style="transition-delay: 100ms;">
+                    <div class="flex text-tertiary mb-4"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+                    <p class="italic mb-6">"Para eventos corporativos, EcoBite es el iniciador de conversación perfecto. Sostenible y elegante."</p>
+                    <div><p class="font-bold">Carlos Benítez</p><p class="text-xs text-on-surface-variant">Event Planner Senior</p></div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="glass-panel p-8 rounded-3xl reveal active" style="transition-delay: 200ms;">
+                    <div class="flex text-tertiary mb-4"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+                    <p class="italic mb-6">"La resistencia al calor es sorprendente. Pensé que se ablandaría rápido, pero aguantó perfecto mi latte."</p>
+                    <div><p class="font-bold">Martina Gamarra</p><p class="text-xs text-on-surface-variant">Barista Certificada</p></div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="glass-panel p-8 rounded-3xl reveal active">
+                    <div class="flex text-tertiary mb-4"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+                    <p class="italic mb-6">"Como hotel boutique, buscábamos lujo responsable. Estos vasos son la definición de ese concepto."</p>
+                    <div><p class="font-bold">Ricardo Espínola</p><p class="text-xs text-on-surface-variant">Gerente, Luxury Stay</p></div>
+                </div>
+                <!-- Testimonial 5 -->
+                <div class="glass-panel p-8 rounded-3xl reveal active" style="transition-delay: 100ms;">
+                    <div class="flex text-tertiary mb-4"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+                    <p class="italic mb-6">"El sabor a chocolate belga en el vaso de postre es sublime. Mis clientes ahora lo piden por nombre."</p>
+                    <div><p class="font-bold">Lucía Ferreira</p><p class="text-xs text-on-surface-variant">Chef Pastelera</p></div>
+                </div>
+                <!-- Testimonial 6 -->
+                <div class="glass-panel p-8 rounded-3xl reveal active" style="transition-delay: 200ms;">
+                    <div class="flex text-tertiary mb-4"><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span></div>
+                    <p class="italic mb-6">"Finalmente una solución local de nivel mundial en Paraguay. Orgullosos de ser partners de EcoBite."</p>
+                    <div><p class="font-bold">Jorge Villalba</p><p class="text-xs text-on-surface-variant">CEO, Distribuidora Verde</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-section-gap bg-surface-container-low/50">
+        <div class="max-w-4xl mx-auto px-margin-desktop">
+            <h2 class="font-display-md text-display-md text-primary text-center mb-16">Preguntas Frecuentes</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Cuánto tiempo dura el vaso antes de ablandarse?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Nuestros vasos están diseñados con ingeniería de precisión para resistir bebidas calientes hasta 85°C por más de 45-60 minutos sin perder su integridad estructural. Para bebidas frías, la resistencia se extiende hasta las 2 horas.</div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Cuáles son los ingredientes principales?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Utilizamos una selección premium de salvado de trigo, avena integral y almidones naturales de origen local. Todos nuestros ingredientes son 100% naturales, biodegradables y aptos para el consumo humano, sin aditivos químicos.</div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Son aptos para celíacos?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Nuestra línea estándar 'Original Grain' contiene gluten. Sin embargo, disponemos de la línea 'EcoFlavor Gluten-Free' fabricada con harinas alternativas para pedidos mayoristas y eventos especiales bajo solicitud previa.</div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Puedo personalizar los vasos con mi logo?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Ofrecemos servicios de personalización mediante grabado láser de alta precisión. Esta técnica nos permite estampar su logo corporativo sin utilizar tintas ni químicos, manteniendo la total compostabilidad del producto.</div>
+                </div>
+                <!-- FAQ-->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Hacen envíos a todo el país?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Contamos con una red logística que cubre todo el territorio de Paraguay. Los envíos a Asunción y Gran Asunción se realizan en 24-48 horas, mientras que al interior del país el tiempo estimado es de 3 a 5 días hábiles.</div>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Tienen fecha de vencimiento?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Los vasos EcoBite tienen una vida útil garantizada de 12 meses. Para mantener su frescura y crocancia, recomendamos almacenarlos en su empaque original en un lugar fresco, seco y protegido de la luz solar directa.</div>
+                </div>
+                <!-- FAQ Item 7 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Qué pasa si el cliente no se come el vaso?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Si decide no comer el vaso, puede desecharlo con total tranquilidad. Se biodegrada completamente en una compostera doméstica en menos de 30 días o en cualquier entorno natural sin generar microplásticos ni residuos tóxicos.</div>
+                </div>
+                <!-- FAQ Item 8 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Afecta el sabor de la bebida?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Actualmente ofrecemos nuestra versión 'Original' con un sutil toque a cereal tostado, y la serie 'EcoFlavor' que incluye opciones de Chocolate Belga y Vainilla Natural, ideales para maridar con cafés, licores o postres.</div>
+                </div>
+                <!-- FAQ Item 9 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Cuál es la cantidad mínima de pedido?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Para el sector gastronómico y corporativo, el pedido mínimo es de 500 unidades. Para emprendimientos pequeños o pruebas de concepto, disponemos de packs de inicio de 100 unidades disponibles en nuestra tienda online.</div>
+                </div>
+                <!-- FAQ Item 10 -->
+                <div class="faq-item glass-panel rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full flex items-center justify-between p-6 text-left hover:bg-primary/5 transition-colors group">
+                        <span class="font-headline-md text-on-surface text-lg">¿Es higiénico servirlos?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-on-surface-variant border-t border-primary/10">Cumplimos con los más estrictos estándares de seguridad alimentaria e higiene. Cada lote es sometido a controles de calidad y los vasos se entregan en empaques sellados al vacío o fundas individuales de papel grado alimenticio.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-section-gap">
+        <div class="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div class="reveal active">
+                <h2 class="font-display-md text-display-md text-primary mb-6">Contactanos</h2>
+                <p class="text-body-lg text-on-surface-variant mb-12">Impulsá tu negocio hacia la sostenibilidad. Completá el formulario y un consultor senior te asesorará en menos de 24 horas.</p>
+                
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Nombre" class="w-full bg-surface border-outline-variant focus:border-primary focus:ring-0 rounded-xl px-6 py-4 transition-all">
+                        <input type="text" placeholder="Apellido" class="w-full bg-surface border-outline-variant focus:border-primary focus:ring-0 rounded-xl px-6 py-4 transition-all">
+                    </div>
+                    <input type="email" placeholder="Email Corporativo" class="w-full bg-surface border-outline-variant focus:border-primary focus:ring-0 rounded-xl px-6 py-4 transition-all">
+                    <input type="text" placeholder="Empresa" class="w-full bg-surface border-outline-variant focus:border-primary focus:ring-0 rounded-xl px-6 py-4 transition-all">
+                    <textarea rows="4" placeholder="Contanos tu proyecto" class="w-full bg-surface border-outline-variant focus:border-primary focus:ring-0 rounded-xl px-6 py-4 transition-all"></textarea>
+                    <button type="submit" class="w-full bg-primary text-on-primary font-label-lg py-5 rounded-xl hover:bg-primary/90 shadow-xl shadow-primary/10 transition-all uppercase tracking-widest">Enviar Solicitud</button>
+                </form>
+            </div>
+            
+            <div class="reveal active">
+                <div class="h-[600px] rounded-3xl overflow-hidden glass-panel relative group">
+                    <div class="absolute inset-0 z-0 bg-surface-dim flex items-center justify-center">
+                        <p class="font-display-md text-primary/30">Mapa Asunción</p>
+                    </div>
+                    <div class="absolute bottom-8 left-8 right-8 bg-surface/90 backdrop-blur-md p-8 rounded-2xl z-10 shadow-2xl">
+                        <h4 class="font-headline-lg text-primary mb-2">Sede Central</h4>
+                        <p class="text-on-surface-variant mb-4">Avda. Mariscal López c/ Senador Long, Asunción, Paraguay.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+                                <span class="material-symbols-outlined text-sm">phone</span>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+                                <span class="material-symbols-outlined text-sm">mail</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-surface-container-low pt-section-gap pb-10">
+        <div class="max-w-[1440px] mx-auto px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjfa4LR6fQsh2u2okUvPTrMNaaEzdtZttwsRqZAgYYBLfK1PUe1mHriP3-avSH_cx3pLKjseJ0HgakP9zDVdaEoAcWhNsrixSZxnwkqsYQxa-Y63CePWUSrJm7oJBf4rY2xn7JoDyLCld8UQEMKWNS3xeRfbnsKqGkKfRkT-VSBB4WYBQDsxwHdxuU3rHo4cSc6fOZ-bj6yf5mhjellUaQ6D89M0lP5G5WBkkA568SIoI82UrEv0bu6Dcz044i_nQYWg" alt="EcoBite Logo" class="h-16 w-auto object-contain">
+                        <span class="font-headline-md text-headline-md text-primary">EcoBite</span>
+                    </div>
+                    <p class="text-on-surface-variant text-body-md leading-relaxed">Redefiniendo el lujo a través de la sostenibilidad radical. Fabricado con orgullo en Paraguay para un mundo sin residuos.</p>
+                </div>
+                
+                <div>
+                    <h5 class="font-label-lg text-primary mb-6">Mapa del Sitio</h5>
+                    <ul class="space-y-4 text-on-surface-variant text-body-md">
+                        <li class=""><a href="#inicio" class="hover:text-primary transition-colors">Inicio</a></li>
+                        <li class=""><a href="#productos" class="hover:text-primary transition-colors">Productos</a></li>
+                        <li class=""><a href="#beneficios" class="hover:text-primary transition-colors">Sostenibilidad</a></li>
+                        <li class=""><a href="#contacto" class="hover:text-primary transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="font-label-lg text-primary mb-6">Legal</h5>
+                    <ul class="space-y-4 text-on-surface-variant text-body-md">
+                        <li class=""><a href="#" class="hover:text-primary transition-colors">Privacidad</a></li>
+                        <li class=""><a href="#" class="hover:text-primary transition-colors">Términos</a></li>
+                        <li class=""><a href="#" class="hover:text-primary transition-colors">Política Ambiental</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="font-label-lg text-primary mb-6">Newsletter</h5>
+                    <p class="text-on-surface-variant text-body-md mb-4">Recibí las últimas innovaciones en biomateriales.</p>
+                    <div class="relative">
+                        <input type="email" placeholder="Tu email" class="w-full bg-surface border-none rounded-full px-6 py-3 pr-12 focus:ring-1 focus:ring-primary">
+                        <button class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center">
+                            <span class="material-symbols-outlined text-sm">send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-10 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-4 text-label-sm text-on-surface-variant">
+                <p class="">© 2024 EcoBite S.R.L. Sustainable Luxury Manufacturing.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-primary transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-primary transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-primary transition-colors">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/yourlink" class="fixed bottom-10 right-10 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-2.32 0-4.515.903-6.182 2.543a8.683 8.683 0 0 0-2.544 6.12c0 1.936.634 3.753 1.83 5.253l-.066.386-.714 4.193 4.298-.713.36-.062a8.7 8.7 0 0 0 4.887 1.488h.005c2.321 0 4.516-.902 6.182-2.543a8.683 8.683 0 0 0 2.544-6.12 8.7 8.7 0 0 0-10.63-10.545z" class=""></path></svg>
+    </a>
+
+    <script class="">
+        // Scroll Animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('h-16', 'bg-surface/90');
+                navbar.classList.remove('h-20', 'bg-surface/60');
+            } else {
+                navbar.classList.remove('h-16', 'bg-surface/90');
+                navbar.classList.add('h-20', 'bg-surface/60');
+            }
+        });
+
+        //</script>
+
+
+
+
+
+</body></html>
